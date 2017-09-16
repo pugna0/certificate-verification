@@ -18,9 +18,7 @@ author: Pugna0
     python
 
 ## Topology diagram
-![foryou]:https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
-
-https://github.com/pugna0/certificate-verification/blob/master/imgs/cert-verification.png
+![img](https://github.com/pugna0/certificate-verification/blob/master/imgs/cert-verification.png)
 
 
 ## Project Address

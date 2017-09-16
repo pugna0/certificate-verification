@@ -1,9 +1,6 @@
 ---
-layout: post
 title: Cert Verification
 categories: openssl devops
-image: cert-verification.png
-image2: cert-chain-verification.png
 author: Pugna0
 ---
 
@@ -22,7 +19,7 @@ author: Pugna0
 
 
 ## Project Address
-[Cert Verification](https://gitlab.nexusguard.net/platform/platform-boy/tree/master/cert_reference)
+
 
 ## Components
 #### Sponsor
@@ -50,8 +47,7 @@ sponsor部署在aws上，由crontab每天执行一次。
   完整，否则视为不完整证书链。再遍历证书链，找到第一个根证书，用mozila-ca-bundle验证这个根证书的有效性，如果通过，则证书验证成功，否则视为不受信任的CA所签发的证书。
 
   其次对证书链的检查：
-  {% capture imagePath %}{{ page.date | date: "%Y-%m-%d" }}-{{ page.title | slugify }}/{{ page.image2 }}{% endcapture %}
-  ![{{ page.title | slugify }}](/developers/assets/images/{{ imagePath }}){:class="img-responsive"}
+![img](https://github.com/pugna0/certificate-verification/blob/master/imgs/cert-chain-verification.png）
 
   注释： （Mozilla ca bundle作为受信任CA）
   curl -o /mnt/ca/cacert.pem --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem

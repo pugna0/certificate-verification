@@ -48,7 +48,7 @@ sponsor部署在aws上，由crontab每天执行一次。
 
   其次对证书链的检查：
 
-  ![img2](https://github.com/pugna0/certificate-verification/blob/master/imgs/cert-chain-verification.png）
+  ![img2](https://github.com/pugna0/certificate-verification/blob/master/imgs/cert-chain-verification.png)
 
   注释： （Mozilla ca bundle作为受信任CA）
   curl -o /mnt/ca/cacert.pem --time-cond cacert.pem https://curl.haxx.se/ca/cacert.pem
